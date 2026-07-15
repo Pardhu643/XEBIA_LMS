@@ -1,4 +1,9 @@
 @echo off
+if not "%JAVA_HOME%" == "" if exist "%JAVA_HOME%\bin\java.exe" goto java_ok
+if exist "C:\Program Files\JetBrains\PyCharm 2025.3.1.1\jbr\bin\java.exe" (
+    set "JAVA_HOME=C:\Program Files\JetBrains\PyCharm 2025.3.1.1\jbr"
+)
+:java_ok
 set "MAVEN_VERSION=3.9.6"
 set "MAVEN_HOME=%~dp0.mvn\apache-maven-%MAVEN_VERSION%"
 set "MAVEN_ZIP=%~dp0.mvn\maven-%MAVEN_VERSION%-bin.zip"

@@ -11,6 +11,7 @@ import { useGetModules } from "../../../hooks/useModules";
 import { useGetSubmodules } from "../../../hooks/useSubmodules";
 import { SkeletonPulse, LessonSkeleton } from "../../../components/common/Skeleton";
 import ErrorState from "../../../components/common/ErrorState";
+import EmptyState from "../../../components/common/EmptyState";
 import { BookOpen, Clock, Globe, ArrowLeft, Play, FileText, CheckCircle2 } from "lucide-react";
 
 // Sub-component to fetch and render submodules for a specific module
